@@ -1,0 +1,14 @@
+{
+  "name": "projeto_pgats_mariahelena",
+  "version": "1.0.0",
+  "description": "Projeto de finalização da disciplina de Programação",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/**/*.test.js"
+  },
+  "author": "Bianchi, Maria",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^10.4.0"
+  }
+}
