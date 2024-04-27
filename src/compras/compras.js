@@ -1,10 +1,7 @@
 const calcularTotal = (ferramentas, comprar) => {
-    if ((ferramentas.length === 0) && (comprar.length === 0)) {
-        throw new Error("Ambas as listas precisam ter ao menos um item.");
-    } else if (ferramentas.length === 0){
-        throw new Error("Ambas as listas precisam ter ao menos um item.");
-    } else if (comprar.length === 0) {
-        throw new Error("Ambas as listas precisam ter ao menos um item.");
+    if (((ferramentas.length === 0) && (comprar.length === 0)) || 
+            (ferramentas.length === 0 || comprar.length === 0 )) {
+        throw new Error("Ambas as listas precisam ter ao menos um item.")
     } else {
         let encontrei = false;
         let itensEncontrados = 0;
@@ -15,7 +12,6 @@ const calcularTotal = (ferramentas, comprar) => {
                 if (comprar[i] === ferramentas[j].nome) {
                     encontrei = true;
                     itensEncontrados += ferramentas[j].preco;
-
                     ferramentasEncontradas[ferramentasEncontradas.length] = comprar[i];
                 }
             }
